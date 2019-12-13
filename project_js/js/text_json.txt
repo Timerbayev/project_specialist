@@ -1,0 +1,3 @@
+let data_ = { "ginegologist":["consultation","manipulation","smear","cauterization"],
+   "surgeon": ["consultation","dissection of abscess","gypsum"],
+    "sonographer":["abdomen", "pelvis minor","echocardiography","doppler"]} 
