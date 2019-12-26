@@ -1,29 +1,57 @@
-"use strict"
-let arr = ['ginegologist', 'surgeon', 'sonographer']
- let data_ = { "ginegologist":["consultation","manipulation","smear","cauterization"],
-   "surgeon": ["consultation","dissection of abscess","gypsum"],
-    "sonographer":["abdomen", "pelvis minor","echocardiography","doppler"]};
-for (let ar of arr) {	
-console.log(data_[ar])};
- 
-let base = document.getElementById("base");
-for (let elem of arr) {
-let head = document.createElement("h1");
-head.classList.add("order");
-head.innerHTML = elem;
-base.appendChild(head);	
-let parent = document.createElement("ul");
-parent.classList.add("order");
-base.appendChild(parent);
- for(let el of data_[elem]) {
-	 let row = document.createElement("li");
-       row.innerHTML = el;
-       parent.appendChild(row);} } 
+let data = [
+{
+	"kind": "surgeon",
+	"first_name": "Andrey",
+	"second_name": "Kusuklovsky",
+	"age": "56",
+	"experience": "30",
+    "degree":"Highly qualified"},
+ {
+	"kind": "surgeon",
+	"first_name": "Andrey",
+	"second_name": "Konstantinovich",
+	"age": "33",
+	"experience": "10",
+    "degree":"Middle qualified"},
+	{
+	"kind": "ginegologist",
+	"first_name": "Svetlana",
+	"second_name": "Kostina",
+	"age": "43",
+	"experience": "20",
+    "degree":"Highly qualified"},
+	{
+	"kind": "ginegologist",
+	"first_name": "Evgeny",
+	"second_name": "Pashin",
+	"age": "48",
+	"experience": "25",
+    "degree":"Highly qualified"}
+	]
+
+let parent = document.querySelector(".container");
+let arr = ["first_name", "second_name","age","experience","degree"];
+
+for (let ar of data){
+	
+	head = document.createElement("h1");
+	head.innerHTML = ar["kind"];
+	parent.appendChild(head);
+	row = document.createElement("ul");
+	parent.appendChild(row);
+	for (let a of arr){
+		line = document.createElement("li");
+	    line.innerHTML = ar[a];
+	    row.appendChild(line);}
+	
+	
+}
+
 	   
 $(document).ready(function(){$("h1").click(function(){
   $("ul").slideToggle("slow");
   });
-  });	   
+  });  
 	   
 	   
 	   

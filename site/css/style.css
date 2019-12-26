@@ -19,22 +19,22 @@
 	    margin: 0 auto; background:#E6E6E6;
 		}
     
-	.leftside{float:left; width:25%;
+	.leftside{float:left; width:20%;
 	 }
 	
 	
 	 
-     .rightside {float: right; width:25%; 
+     .rightside {float: right; width:20%; 
 	   
 	  margin-left:200px;
 	  }
-	 .content {  margin: 0 25% 0 25%;
+	 .content {  margin: 0 20% 0 20%;
 	 }
 	 
 	 .footer {background-color:#B40404;height:200px;}	 
 	 #head {text-align:center;
 	         background-color: #FFFFFF;
-			 color:#000000;
+			 color:red;
 			 margin:0;
 			 height:50px; 
 			 border-style: solid; 
@@ -63,4 +63,17 @@ text-decoration:none
 a:hover {
 color:#FFFFFF;
 text-decoration:none
+}
+
+
+img{
+	width:40px;
+	height:40px;
+	float:left;
+}
+
+#head{ color:#D2691E;
+	  margin:auto;
+	  
+	
 }
