@@ -1,8 +1,8 @@
 "use strict"
-let arr = ['ginegologist', 'surgeon', 'sonographer']
- let data_ = { "ginegologist":["consultation","manipulation","smear","cauterization"],
-   "surgeon": ["consultation","dissection of abscess","gypsum"],
-    "sonographer":["abdomen", "pelvis minor","echocardiography","doppler"]};
+let arr = ['ginegologist', 'surgeon', 'sonographer','ginegologist', 'surgeon', 'sonographer']
+ let data_ = { "ginegologist":["Ivanova Svetlana","Kim Alena","Valilyev Alexandr"],
+   "surgeon": ["Ivanova Svetlana","Kim Alena","Valilyev Alexandr"],
+    "sonographer":["Ivanova Svetlana","Kim Alena","Valilyev Alexandr"]};
 for (let ar of arr) {	
 console.log(data_[ar])};
  
@@ -20,9 +20,14 @@ base.appendChild(parent);
        row.innerHTML = el;
        parent.appendChild(row);} } 
 	   
+let flag = 0;
 
-$(document).ready(function(){$("h1").click(function(){
-  $("ul").slideToggle("slow");
+$(document).ready(function(){$("ul").click(function(){
+	{$(this).slideToggle("slow")};
   });
-  });	   
+}); 	   
+$(document).ready(function(){$("h1").click(function(){
+	{$("ul").slideToggle("slow")};
+  });
+}); 	   
 	   
